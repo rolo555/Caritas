@@ -30,7 +30,7 @@ class Notice < ActiveRecord::Base
 
   #put object methods here
   def show_if(string)
-    return "Sí" if string== true || string =~ (/(true|t|yes|y|1)$/i)
+    return "Si" if string== true || string =~ (/(true|t|yes|y|1)$/i)
     return "No" if string== false || string.nil? || string =~ (/(false|f|no|n|0)$/i)
   end
 end
