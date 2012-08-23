@@ -1,6 +1,6 @@
 class Notice < ActiveRecord::Base
   #put constants here
-  NOTICES_TYPES = Array.[]("Campañas","Dias Especiales", "Asambleas", "Otro")
+  NOTICES_TYPES = Array.[]("Campanas","Dias Especiales", "Asambleas", "Otro")
   
   
   #put relations and references here
