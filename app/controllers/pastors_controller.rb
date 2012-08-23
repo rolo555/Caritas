@@ -51,7 +51,7 @@ class PastorsController < ApplicationController
 
     respond_to do |format|
       if @pastor.save
-        format.html { redirect_to(@pastor, :notice => 'El párroco fué creado correctamente.') }
+        format.html { redirect_to(@pastor, :notice => 'El parroco fue creado correctamente.') }
         format.xml  { render :xml => @pastor, :status => :created, :location => @pastor }
         
         t = Pastor.find(@pastor.id)
@@ -70,7 +70,7 @@ class PastorsController < ApplicationController
 
     respond_to do |format|
       if @pastor.update_attributes(params[:pastor])
-        format.html { redirect_to(@pastor, :notice => 'El párroco se modificó correctamente.') }
+        format.html { redirect_to(@pastor, :notice => 'El parroco se modifico correctamente.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
