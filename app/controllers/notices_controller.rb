@@ -2,9 +2,7 @@ class NoticesController < ApplicationController
   # GET /notices
   # GET /notices.xml
   
-    record_select :per_page => 5,
-    :search_on => ['title'],
-    :full_text_search => true
+
   
   def index
     @notices = Notice.search(params[:search])
