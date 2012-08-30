@@ -81,11 +81,13 @@
   </tr>
 <tr>  
       <td><b><%= "Fotografía del Voluntario" %></b></td>
-      <% if @volunteer.volunteer_photo %>
-      <td><%=  image_tag url_for_file_column("volunteer", "volunteer_photo"), :size=>"300x200" %></td>
-      <% else %>
-      <td>No está disponible la fotografía</td>
-      <% end   %>
+      <td>
+      <%# if @volunteer.volunteer_photo %>
+      <%#=  image_tag url_for_file_column("volunteer", "volunteer_photo"), :size=>"300x200" %>
+      <%# else %>
+      <!--No está disponible la fotografía-->
+      <%# end   %>
+      </td>
     </tr>
   
   <tr align="right">
