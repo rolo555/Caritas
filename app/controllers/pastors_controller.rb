@@ -2,9 +2,6 @@ class PastorsController < ApplicationController
   # GET /pastors
   # GET /pastors.xml
   
-    record_select :per_page => 5,
-    :search_on => ['name'],
-    :full_text_search => true
 
   
   def index
