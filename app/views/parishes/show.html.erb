@@ -53,11 +53,13 @@
     </tr>
     <tr>  
       <td><b><%= "Imagen" %></b></td>
-      <% if @parish.parish_photo %>
-      <td><%=  image_tag url_for_file_column("parish", "parish_photo"), :size=>"300x200" %></td>
-      <% else %>
-      <td>No está disponible la fotografía</td>
-      <% end   %>
+      <td>
+      <%# if @parish.parish_photo %>
+      <%#=  image_tag url_for_file_column("parish", "parish_photo"), :size=>"300x200" %>
+      <%# else %>
+      <!--No está disponible la fotografía-->
+      <%# end   %>
+      </td>
     </tr>
   </table>
 

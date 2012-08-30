@@ -8,7 +8,7 @@ class Group < ActiveRecord::Base
   has_one :parish
   
   #put active record callbacks here
-  file_column :group_photo
+  #file_column :group_photo
   
   #put validates here
   validates_presence_of :name  
@@ -16,8 +16,8 @@ class Group < ActiveRecord::Base
   
   validates_length_of :name, :maximum => 50
 
-  validates_file_format_of :group_photo, :in => ["gif", "jpg", "png"]
-  validates_filesize_of :group_photo, :in => 1.kilobytes..3000.kilobytes
+  #validates_file_format_of :group_photo, :in => ["gif", "jpg", "png"]
+  #validates_filesize_of :group_photo, :in => 1.kilobytes..3000.kilobytes
 
   #put class methods here
   def self.search(search)

@@ -31,10 +31,10 @@ class SocialCard < ActiveRecord::Base
   validates_length_of :occupation_reference, :maximum => 50 
   
   
-  file_column :social_card_photo
+  #file_column :social_card_photo
   
-  validates_file_format_of :social_card_photo, :in => ["gif", "jpg", "png"]
-  validates_filesize_of :social_card_photo, :in => 1.kilobytes..3000.kilobytes
+  #validates_file_format_of :social_card_photo, :in => ["gif", "jpg", "png"]
+  #validates_filesize_of :social_card_photo, :in => 1.kilobytes..3000.kilobytes
   def self.search(search)
     if search
       find(:all, :conditions => ['LOWER(name) LIKE ?', "%#{search.downcase}%"])
