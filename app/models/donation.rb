@@ -6,7 +6,7 @@ class Donation < ActiveRecord::Base
   belongs_to :campaings
   
   #put active record callbacks here
-  file_column :volunteer_photo
+  #file_column :volunteer_photo
   #put validates here
   validates_presence_of :name
   validates_presence_of :amount
