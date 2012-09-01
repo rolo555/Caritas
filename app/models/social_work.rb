@@ -39,8 +39,8 @@ class SocialWork < ActiveRecord::Base
     last.sort{|a,b| b.created_at <=> a.created_at}.slice(0..4)
   end  
   def self.find_last_six
-    find(:all,:order => "created_at",:conditions => ['id IN (Select social_work_id As id From social_work_photos)'], :limit=>6)
-
+    #    find(:all,:order => "created_at",:conditions => ['id IN (Select social_work_id As id From social_work_photos)'], :limit=>6)
+    []
   end
 
   def to_lable

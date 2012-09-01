@@ -33,8 +33,8 @@ class Campaing < ActiveRecord::Base
   end
   
   def self.find_last_six
-    find(:all,:order => "date_ini", :limit=>6,:conditions => ['id IN (Select campaing_id As id From campaing_photos)'])
-
+#    find(:all,:order => "date_ini", :limit=>6,:conditions => ['id IN (Select campaing_id As id From campaing_photos)'])
+    []
   end
   def self.getRandomPicture (id)
     @photos=CampaingPhoto.find(:all,:order => "id",:conditions => ['campaing_id = ?',id])
