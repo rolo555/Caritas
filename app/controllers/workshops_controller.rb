@@ -2,9 +2,9 @@ class WorkshopsController < ApplicationController
   # GET /workshops
   # GET /workshops.xml
     
-    record_select :per_page => 5,
-    :search_on => ['parish'],
-    :full_text_search => true
+  #  record_select :per_page => 5,
+  #  :search_on => ['parish'],
+  #  :full_text_search => true
   # GET /workshops/1
   # GET /workshops/1.xml
   def show
